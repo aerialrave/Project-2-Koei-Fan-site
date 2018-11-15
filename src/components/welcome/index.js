@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function welcome(props){
+export default function Welcome(props){
 return(
 <div id="well">
 

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function game(props){
+export default function Game(props){
 return(
 <div id="gam">
 
