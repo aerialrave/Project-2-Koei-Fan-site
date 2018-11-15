@@ -45,9 +45,10 @@ viewControl(){
 const view = this.state.currentview;
 switch(view) {
 
-    case 'character': return <Character />
+    case 'character': return <Character fetchclutch={this.handleFetch} viewclutch={this.handleView} fetchcontent={this.state.fetchstring}  />
     // use this for multi returns case 'hi': return (<div><Character /><Game /></div>)
-    case 'game':return <Game />
+      // use this to change content on fetch change view from game to character
+    case 'game':return <Game  fetchclutch={this.handleFetch} viewclutch={this.handleView} fetchcontent={this.state.fetchstring}  />
 
     default: return <Welcome />
 
@@ -55,11 +56,39 @@ switch(view) {
 
 }
 
+
+// get a list of all games and characters and then  make the appropriate axios request
 fetchControl(){
 const fetch = this.state.fetchstring;
 switch(grab){
-  case '': return
- // get a list of all games and characters and then  make the appropriate axios request
+  case 'DW': return
+
+  case 'SAMW': return
+
+  case 'WINP': return
+  // this is for the otomo game
+  case 'Gold': return
+
+  case 'Zhou': return
+
+  case 'Guan': return
+
+  case 'Cao': return
+
+  case 'Xiahou': return
+
+  case 'Lu': return
+
+  case 'Yuki': return
+
+  case 'Nobu': return
+
+  case 'Masa': return
+
+  case 'Hanz': return
+
+  case 'Taka': return
+
   default : return
 }
 
