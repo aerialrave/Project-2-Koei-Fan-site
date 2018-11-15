@@ -5,6 +5,7 @@ import Sidebar from './components/sidebar';
 import Game from './components/game';
 import Banner from './components/banner';
 import Content from './components/content';
+import Character from './components/character'
 
 import './App.css';
 import axios from 'axios';
@@ -67,7 +68,7 @@ switch(view) {
 // get a list of all games and characters and then  make the appropriate axios request
 fetchControl(){
 const fetch = this.state.fetchstring;
-switch(grab){
+switch(fetch){
   case 'DW': return
 
   case 'SAMW': return
@@ -108,6 +109,18 @@ switch(grab){
   render() {
     return (
       <div className="App">
+        <div className="top">
+          {/*banner needs onclick and viewclutch*/}
+        <Banner />
+        </div>
+
+        <div className="bottom">
+        {/*sidebar needs onclick and viewclutch*/}
+        <Sidebar />
+        {/*the rest of the props go here */}
+        <Content />
+        </div>
+
 
       </div>
     );

@@ -1,5 +1,5 @@
-import React, from 'react';
-// import game, character and video
+import React from 'react';
+// import game, character, welcome, and video
 
 export default function Content(props){
 
@@ -10,11 +10,8 @@ export default function Content(props){
 
 
 return(
-<div id="cont">
+<div className="cont">
 
 </div>
   )
 }
-
-
-export default Content;
