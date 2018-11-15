@@ -1,4 +1,11 @@
 import React, { Component, Fragment } from 'react';
+import Video from './components/video';
+import Welcome from './components/welcome';
+import Sidebar from './components/sidebar';
+import Game from './components/game';
+import Banner from './components/banner';
+import Content from './components/content';
+
 import './App.css';
 import axios from 'axios';
 

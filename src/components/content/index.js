@@ -1,19 +1,16 @@
-import React, { Component } from 'react';
+import React, from 'react';
+// import game, character and video
 
-class Content extends Component(props){
-constructor(props){
-super(props);
-this.state ={
-  
-}
+export default function Content(props){
 
 
-}
+
+
 
 
 
 return(
-<div id="well">
+<div id="cont">
 
 </div>
   )
