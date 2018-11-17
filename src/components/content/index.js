@@ -4,7 +4,6 @@ import React from 'react';
 import Video from '../video';
 import Welcome from '../welcome';
 import Game from '../game';
-
 import Character from '../character';
 
 

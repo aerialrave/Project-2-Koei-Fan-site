@@ -15,6 +15,13 @@
   cursor: pointer;
 }
 
+#sideb{
+    display: inline-flex;
+    flex-flow: column;
+}
+
+
+
 .bottom{
   flex: 80%;
   display: flex;
@@ -43,6 +50,7 @@
   background-color: black;
   height: 92vh;
   color:white;
+  overflow-y: scroll;
 }
 
 

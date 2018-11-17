@@ -4,20 +4,46 @@ import SWTitle from './66094-samurai-warriors-4-na-ps4-box-art.png';
 import WinPTitle from './Winning_post.jpg';
 import GoldCTitle from './Corda4.jpg'
 
+
+
+function gameswitch(st){
+
+switch (st){
+  case 'DW': return(  <img src={DWTitle} />  )
+      break;
+    case 'SAMW': return( <img src={SWTitle} /> )
+      break;
+    case 'WINP': return( <img src={WinPTitle}   /> )
+      break;
+    case 'Gold':return ( <img src={GoldCTitle} />)
+        break;
+      default: return;
+
+    };
+
+};
+
+
+
 export default function Game(props){
 
 
 
-
 return(
-<div id="gam">
-  <div id="gametop">
-<div id="game-img-div">
-<img src={DWTitle} />
+<div className="gam">
+  <div className="gametop">
+<div className="game-img-div">
+
+
+{gameswitch(props.fetchcontent)}
+
+{console.log(props.fetchbox.imgsrc)}
 </div>
 
-<div id="game-content">
-<p></p>
+<div className="game-content">
+
+<h2>{props.fetchbox.title}</h2>
+<p>{props.fetchbox.summary}</p>
 
 </div>
 
