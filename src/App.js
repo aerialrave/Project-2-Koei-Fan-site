@@ -19,14 +19,18 @@ class App extends Component {
       rendarr: [],
       currentview:'',
       fetchstring: '',
+      fetcharr:[]
     }
 this.handleView = this.handleView.bind(this);
-this.handleChange = this.handleChange.bind(this);
-this.handleSubmit = this.handleChange.bind(this);
 this.handleFetch = this.handleFetch.bind(this);
+this.viewControl = this.viewControl.bind(this);
+this.mixControl = this.mixControl.bind(this);
+
+this.arrChange = this.arrChange.bind(this);
   }
 // handles change of view
 handleView(view){
+  console.log(view);
 this.setState({
   currentview: view
 })
@@ -34,15 +38,24 @@ this.setState({
 
 }
 
-handleChange(e){
+
+
+
+
+
+
+
+arrChange(arr){
+
+  this.setState({
+    fetcharr: arr
+  })
 
 }
 
-async handleSubmit(e){
-
-}
 // handles changes of content
 async handleFetch(grab){
+  console.log(grab);
 this.setState({
     fetchstring: grab
       })
@@ -68,8 +81,9 @@ switch(view) {
 // get a list of all games and characters and then  make the appropriate axios request
 fetchControl(){
 const fetch = this.state.fetchstring;
+
 switch(fetch){
-  case 'DW': return
+  case 'DW': this.arrChange(['DWTitle']) 
 
   case 'SAMW': return
 
@@ -103,6 +117,15 @@ switch(fetch){
 
 }
 
+mixControl(view,title){
+
+  console.log(`${view} and ${title}` )
+  this.handleView(view);
+  console.log(`still running`)
+  this.handleFetch(title);
+  console.log(`ran`)
+}
+
 
 
 
@@ -111,14 +134,14 @@ switch(fetch){
       <div className="App">
         <div className="top">
           {/*banner needs onclick and viewclutch*/}
-        <Banner />
+        <Banner viewclutch={this.handleView} />
         </div>
 
         <div className="bottom">
         {/*sidebar needs onclick and viewclutch*/}
-        <Sidebar />
+        <Sidebar viewclutch={this.handleView} fetchclutch={this.handleFetch} fetchcontent={this.state.fetchstring} mixclutch={this.mixControl}  />
         {/*the rest of the props go here */}
-        <Content />
+        <Content viewclutch={this.handleView}  window={this.viewControl} fetchclutch={this.handleFetch} fetchcontent={this.state.fetchstring}  />
         </div>
 
 

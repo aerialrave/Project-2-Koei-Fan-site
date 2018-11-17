@@ -14,6 +14,15 @@ export default function Character(props){
 return(
 <div id="char">
 
+<div id="chartop">
+<div id="char-img-div">
+{ /*img link goes here or on div itself */}
+</div>
+
+
+<div id="char-content"> <p>stock text here:</p>{ /*text content goes here or on div itself */} </div>
+</div>
+
 </div>
   )
 }

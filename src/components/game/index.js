@@ -5,8 +5,24 @@ import WinPTitle from './Winning_post.jpg';
 import GoldCTitle from './Corda4.jpg'
 
 export default function Game(props){
+
+
+
+
 return(
 <div id="gam">
+  <div id="gametop">
+<div id="game-img-div">
+<img src={DWTitle} />
+</div>
+
+<div id="game-content">
+<p></p>
+
+</div>
+
+</div>
+
 
 </div>
   )
