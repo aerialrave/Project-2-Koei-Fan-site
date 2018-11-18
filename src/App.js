@@ -61,7 +61,7 @@ switch(view) {
     case 'character': return <Character fetchclutch={this.handleFetch} viewclutch={this.handleView} fetchcontent={this.state.fetchstring} fetchbox={this.state.fetchobj} />
     // use this for multi returns case 'hi': return (<div><Character /><Game /></div>)
       // use this to change content on fetch change view from game to character
-    case 'game':return <Game  fetchclutch={this.handleFetch} viewclutch={this.handleView} fetchcontent={this.state.fetchstring} fetchbox={this.state.fetchobj} />
+    case 'game':return <Game fetchclutch={this.handleFetch} viewclutch={this.handleView} fetchcontent={this.state.fetchstring} fetchbox={this.state.fetchobj} mixclutch={this.mixControl}  />
 
     default: return <Welcome />
 
@@ -138,25 +138,168 @@ entries: '4'
 
   break;
 
-  case 'Zhou': return
+  case 'Zhou': this.handleobj({
+    name: 'Zhou Yun',
 
-  case 'Guan': return
+lived: '168 - 229',
 
-  case 'Cao': return
+summary: `Zhao Yun (onyomi: Chō Un) is a general of the Three Kingdoms period who has a record of good service. Liu Bei personally praised his bravery at Han River, though it was often noted that his feats were often under the radar and often boasted by various fictional biographies. Romance of the Three Kingdoms and other local folklore commonly describes him as a just and virtuous general of peerless strength who has a deep sense of loyalty for Liu Bei. His lone rampage to protect A Dou remains one of his crowning feats in fiction. Years after his death he is lauded as one of the Five Tiger Generals.
 
-  case 'Xiahou': return
+His Dynasty Warriors incarnation is the mascot character of the series. He sometimes shares the spotlight with the series' other iconic character, Lu Bu. He consistently rides a white steed during in-game cutscenes. This persona also has two character image songs titled TRUE DRAGON and FIGHT IT OUT and a duet with Jiang Wei called MISSION.
 
-  case 'Lu': return
+Zhao Yun placed fourth place with fans in Gamecity's Dynasty Warriors 7 character popularity poll. For the Dynasty Warriors 8: Xtreme Legends character popularity poll, he placed first. In Famitsu's character survey, he is the most popular character within the boyfriend category. The latest poll for the eighth installment puts him in second. The character poll for overseas fans puts him in first place for the Shu division and third in the two final rounds. He is the most popular Dynasty Warriors character for the Warriors Orochi 3 Ultimate Halloween costume poll. Fans ranked him second in Shin Sangoku Musou Online Z's first survey for most popular general.
 
-  case 'Yuki': return
+In Kessen II, his character's height is the same as his Dynasty Warriors counterpart.`,
 
-  case 'Nobu': return
+ytlink: 'https://www.youtube.com/watch?v=zlv3BPzv6-I'
 
-  case 'Masa': return
+  })
+  break;
 
-  case 'Hanz': return
+  case 'Guan': this.handleobj({
+    name: 'Guan Yu',
 
-  case 'Taka': return
+lived: '162 - 220',
+
+summary: `Guan Yu (onyomi: Kan U) is arguably one of Liu Bei's bravest and strongest generals. Despite his spotty military record and arrogant behavior, his Romance of the Three Kingdoms portrayal is known for being a mighty warrior with a studious mind who could cleave apart an "army of thousands with ease." His well-kept beard was famous, and he was nicknamed "Beautiful Beard" (鬚髯) by his peers. Years after his death, he has been dubbed one of the Five Tiger Generals and worshiped as Guandi (関帝, lit. Emperor Guan) or Guangong (関公, lit. Duke Guan), the God of brotherhood, justice and righteousness; thus to this day it is common to see statues of him on altars at various Chinese shops. His historical children are Guan Ping and Guan Xing.
+
+Romance of the Three Kingdoms and other Three Kingdoms fiction portrays him as the noble and dignified oath brother for Liu Bei and Zhang Fei, though it was noted that akin to his historical self, Guan Yu eventually let arrogance get the best of him which caused most soldiers from the Wu kingdom hold to grudge against him and thus bring about his downfall. His fictional children are Guan Suo and Guan Yinping.
+
+Gamecity's Dynasty Warriors 7 character popularity poll has his Dynasty Warriors incarnation at thirty-fourth place out of sixty-two characters and fifty-sixth in the Dynasty Warriors 8: Xtreme Legends poll. The latest poll for the eighth installment puts him in fifty-first. The character poll for overseas fans puts him in third place for the Shu division and twelfth in the semi-final round.
+
+His character's height in Kessen II is 185 cm (6'1").`,
+
+ytlink: 'https://www.youtube.com/watch?v=MoUhA0GeVx4'
+
+  })
+            break;
+
+  case 'Cao': this.handleobj({
+    name: 'Cao Cao',
+
+lived: '155 - march 15, 220',
+
+summary: `Cao Cao (onyomi: Sō Sō) was the Chancellor of the Han Dynasty who laid the foundations for the future kingdom of Wei. A clean-cut, tall, and crafty individual, Cao Cao excelled in war and politics. He was loved and feared for his perceptiveness and swift retaliations, as well as his very close relationship with many of his retainers. Chen Shou commented that he was a leader who possessed a unique mindset and was a timeless hero.
+
+Romance of the Three Kingdoms famously villainizes him to be a hot-blooded, sly, yet occasionally dumbfounded schemer who sometimes survived his hardships on luck alone, said to be from the heavens themselves being right beside him. His legitimate successor is Cao Pi, born from his consort Bianshi. Xiahou Dun, Xiahou Yuan, Cao Ren, and Cao Hong are his well-known cousins.
+
+His Dynasty Warriors incarnation ranked in seventeenth place in Gamecity's Dynasty Warriors 7 character popularity poll and is twenty-sixth in the Dynasty Warriors 8: Xtreme Legends popularity poll. In Famitsu's character survey, he is the number one character fans would want as their boss. The latest poll for the eighth installment puts him in fifteenth. The character poll for overseas fans puts him in third place for the Wei division and fourteenth in the semi-final round.
+
+His character's height in Kessen II is 180 cm (5'11").`,
+
+ytlink: 'https://www.youtube.com/watch?v=ljW3n42oXKQ'
+
+      })
+
+        break;
+
+  case 'Xiahou': this.handleobj({
+
+    name: 'Xiahou Dun',
+
+lived: '? - 13 June 220',
+
+summary: `Xiahou Dun (onyomi: Kakō Ton) is one of Cao Cao's cousins from his father's side of the family. Though known as a short-tempered man in his youth, he became a lawful and cultured bureaucrat who focused on logistics and domestics. He served Cao Cao for his entire military career, dying mere months after his lord. He famously lost his left eye at Xiapi or Xiaopei from a stray arrow. Romance of the Three Kingdoms portrays him as a capable war general and has him famously devour his left eye after it's skewered by an arrow.
+
+His Dynasty Warriors counterpart shares a brotherly relationship with one of Cao Cao's other cousins, Xiahou Yuan, in this series (though their actually blood relations historically are ambiguous). In Gamecity's character popularity poll for Dynasty Warriors 7, he was the second most popular character while the one for Dynasty Warriors 8: Xtreme Legends ranked him in ninth place. In Famitsu's character survey, he placed tenth in the boss category. The latest poll for the eighth installment puts him in seventh. The character poll for overseas fans puts him in first place for the Wei division and eighth in the semi-final round. He also ranked fifth in Shin Sangoku Musou Online Z's first survey for most popular general. He is the fifth most transcended character in the Dynasty Warriors: Unleashed character poll.
+
+The height for his Kessen II incarnation is 185 cm (6'1").`,
+
+ytlink: 'https://www.youtube.com/watch?v=RLTszrNqBFw'
+
+      })
+
+      break;
+
+  case 'Lu': this.handleobj({name: 'Lu Bu',
+
+  lived: '? - February 7 199',
+
+  summary: `Lu Bu (onyomi: Ryo Fu) is a general of the late Han Dynasty who is infamous for his many betrayals in the central plains. Like many warlords of the era, he attempted to establish himself as an independent power before he met his end against Cao Cao's forces. Romance of the Three Kingdoms famously dubs him to be the mightiest warrior of his time, though both versions of him were equally known for his fickle personality and his lacking forte in tactics. His daughter is Lu Lingqi.
+
+His trademarks in the Dynasty Warriors series are his high stats, his vastly superior moveset, his unique horse, and his theme song which doubles as the musical motif for several of the games' opening sequences. The exclamation "Do not pursue Lu Bu!" is fondly remembered by fans. He sometimes shares the spotlight with the series's other iconic character, Zhao Yun. Lu Bu reached twenty-first place with fans in Gamecity's Dynasty Warriors 7 and Dynasty Warriors 8: Xtreme Legends character popularity polls. The latest poll for the eighth installment puts him in thirty-third. The character poll for overseas fans puts him in first place for the Other division, second in the semi-finals, and first in the final round. He also ranked sixth in Shin Sangoku Musou Online Z's first survey for most popular general.
+
+This counterpart also has a character image song titled KING OF DESTROYER and a duet with Diaochan called REASON TO FIGHT.`,
+
+  ytlink: 'https://www.youtube.com/watch?v=Ej9MSVLPKPE'
+
+  }); break;
+
+  case 'Yuki':  this.handleobj({
+    name: 'Yukimura Sanada',
+
+lived: '1567 - June 3, 1615',
+
+summary: `Yukimura Sanada (真田 幸村, Sanada Yukimura) is the romanticized name created for Nobushige. His historical counterpart is best known for his steadfast defense against the Tokugawa at Osaka. His accomplishments have been exaggerated after his death, and he is often heralded as the "greatest warrior of the land". Masayuki is his father, Yoshitsugu is his father-in-law, Ina is his sister-in-law, and his elder siblings are Lady Muramatsu and Nobuyuki.
+
+Like his Dynasty Warriors counterpart Zhao Yun, Yukimura is the "poster boy" for the Samurai Warriors series, usually being placed on the cover/manuals of the games. This counterpart appears as a playable guest character in Shin Sangoku Musou VS.
+
+Fans voted him to second place in Gamecity's Sengoku Musou 3: Empires and Sengoku Musou Shoot character popularity polls. In Koei-Tecmo's Facebook Sengoku Musou Chronicle 2nd poll, he was voted first place. According to the Sengoku Musou Seiyuu Ougi 2012 Aki questionnaire, he ranked third for the character fans would want as a lover and sixth for fans' ideal co-op partner for playing Samurai Warriors. For the Samurai Warriors 4 poll, he placed fourth.
+
+His Nobunaga's Ambition counterpart is second place in Gamecity's character popularity ranking for 2015. He placed twenty-third in the Nobunaga no Yabou Taishi poll for most favorite father.`,
+
+ytlink: 'https://www.youtube.com/watch?v=vg8Tn6nZ7Qo'
+
+  }); break;
+
+  case 'Nobu':  this.handleobj({
+    name: 'Nobunaga Oda',
+
+lived: 'June 23, 1534 - June 21, 1582',
+
+summary: `Nobunaga Oda is one of the three unifiers of the Warring States period along with his former generals, Hideyoshi Toyotomi and Ieyasu Tokugawa. Until his untimely demise, Nobunaga is widely considered to have had controlled most of Japan as one of the strongest ruling powers of his time. He is Nō's husband, Oichi's older brother, and Nagamasa Azai's brother-in-law. His successor is his son, Nobutada, though he often does not live to continue his father's legacy.
+
+In many of Kou Shibusawa's produced works, Nobunaga is often portrayed as a charismatic if flawed heroic figure rather than as a heartless dictator. He is the title character of the strategy series, Nobunaga's Ambition, and is the role model for Hideyoshi in Taiko Risshiden. He also appears as a bonus character in Dynasty Warriors using his visual look from the Nobunaga's Ambition series. To honor Nobunaga's Ambition leading to the company's recognition as a video game company, Nobunaga's sprite portrait is imprinted onto one of the cement courts in Koei-Tecmo's Kanagawa building. If he is a viable voting candidate, he will be the number one popular character for the Nobunaga's Ambition popularity polls. He placed fifth in the Nobunaga no Yabou Taishi poll for most favorite father; fans voted him first for the best leader poll.
+
+His Samurai Warriors portrayal is deemed as the equivalent to the Dynasty Warriors portrayal of Cao Cao. Nobunaga is seventeenth place in Gamecity's Sengoku Musou 3: Empires character popularity poll. In Koei-Tecmo's Facebook Sengoku Musou Chronicle 2nd poll, he tied for sixth place with three other characters. For the Samurai Warriors 4 poll, he placed thirty-five in the list.`,
+
+ytlink: 'https://www.youtube.com/watch?v=LN79Gmj5KI0'
+  }); break;
+
+  case 'Masa':  this.handleobj({
+    name: 'Masamune Date',
+
+lived: 'September 5, 1567 - June 27, 1636',
+
+summary: `Masamune Date is the seventeenth head of the Date clan. In spite of facing an infamously traumatizing childhood, he rose to prominence as the most dominate ruling power in Ōshū. He is reputed as one of the wisest figures of the time era, biting back his ambitions to stay as one of the wealthiest independent rulers of his time. After his death, Masamune's famous nickname became the "One-Eyed Dragon" (独眼竜, Dokuganryū) also used for Li Keyong.
+
+In Gamecity's Sengoku Musou 3: Empires and Sengoku Musou Chronicle 2nd character popularity polls, Masamune placed fifth with Samurai Warriors fans. According to the Sengoku Musou Seiyuu Ougi 2012 Aki questionnaire, he placed eighth for the character fans would want as a lover and second for fans' ideal co-op partner for playing Samurai Warriors. For the Samurai Warriors 4 poll, he placed thirteenth. The first character popularity poll for Sengoku Musou Shoot has him at tenth place.
+
+His Nobunaga's Ambition counterpart is fourth place in Gamecity's character popularity ranking for 2015. He placed twentieth in the Nobunaga no Yabou Taishi poll for most favorite father.`,
+
+ytlink:'https://www.youtube.com/watch?v=2yXcuNZgIO0'
+
+  }); break;
+
+  case 'Hanz':  this.handleobj({
+    name: 'Hanzo Hattori',
+
+lived: '1542 - December 23, 1596',
+
+summary: `Hanzō Hattori (服部 半蔵, Hattori Hanzō) is known in modern times to be one of Ieyasu's famous retainers. In fictional mediums, he is commonly portrayed as the leader of the Iga ninja rather than the historically accurate general.
+
+Gamecity's Sengoku Musou 3: Empires character popularity poll lists his Samurai Warriors counterpart as thirty-first place out of forty characters. For the Samurai Warriors 4 poll, he is forty-fourth place.
+
+The Nobunaga no Yabou 201X poll for 4-star officers puts him in forty-fifth place.`,
+
+ytlink:'https://www.youtube.com/watch?v=j9ZIryG0Qxg'
+  }); break;
+
+  case 'Taka':  this.handleobj({
+    name: 'Tadakatsu Honda',
+
+lived: 'March 17, 1548 - December 3, 1610',
+
+summary: `Tadakatsu Honda is a one of Ieyasu Tokugawa's retainers who attended to his lord in several campaigns. He is Ina's father. After his death, Tadakatsu has been heralded as a mighty and intelligent warrior, said to have returned from all of his battles unscathed. People in the Edo period have lauded him with several honorary titles, one of which includes the Four Guardian Kings of Tokugawa.
+
+Before his playable debut in the Samurai Warriors series, he served as the model character for generic generals in Samurai Warriors. He acts as the figurative Dynasty Warriors Lu Bu of the series. Fans voted him to twenty-ninth place in Gamecity's Sengoku Musou 3: Empires character popularity poll. For the Samurai Warriors 4 poll, he placed forty-ninth.
+
+His Nobunaga's Ambition counterpart is sixteenth place in Gamecity's character popularity ranking for 2015. The Nobunaga no Yabou 201X poll for 4-star officers puts him in eighteenth place. He placed twenty-sixth in the Nobunaga no Yabou Taishi poll for most favorite father.
+
+In Saihai no Yukue, his height is 201 cm and he is 45 years old. He reads and trains as a hobby and his favorite food is rice.`,
+
+ytlink:'https://www.youtube.com/watch?v=M1huszJC-aM'
+  }); break;
 
   default : return
 }

@@ -4,8 +4,8 @@ import SWTitle from './66094-samurai-warriors-4-na-ps4-box-art.png';
 import WinPTitle from './Winning_post.jpg';
 import GoldCTitle from './Corda4.jpg'
 
-
-
+import  from './components/DWRow'
+import  from './components/SWRow'
 function gameswitch(st){
 
 switch (st){
@@ -22,6 +22,22 @@ switch (st){
     };
 
 };
+
+
+
+function charswitch(st){
+
+switch (st){
+  case 'DW': return(  <img src={DWTitle} />  )
+      break;
+    case 'SAMW': return( <img src={SWTitle} /> )
+      break;
+      default: return;
+
+    };
+
+};
+
 
 
 
