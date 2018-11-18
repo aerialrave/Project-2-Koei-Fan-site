@@ -82,17 +82,28 @@ flex-wrap: wrap;
 
 .chartop{
     display: flex;
-
+  margin-bottom: 30px;
   }
 
 .char-img-div{
-  flex: 1;
+
+max-width: fit-content;
   }
 
 .char-img-div >img{
-    width: 600px;
+  object-fit: contain;
+    width: auto;
     height: auto;
   }
   .char-content{
     flex:2;
   }
+
+
+.charblock{
+  flex: 0 20%;
+}
+
+.charblock :hover{
+  cursor:pointer;
+}

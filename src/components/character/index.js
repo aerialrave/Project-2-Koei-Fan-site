@@ -10,6 +10,8 @@ import Taka from './Tadakatsu-sw4.jpg';
 import Masamune from './Masamune-sw4.jpg';
 import Nobunaga from './Nobunaga-sw4.jpg';
 
+import Video from '../video';
+
 import DWRow from '../DWRow';
 import SWRow from '../SWRow';
 
@@ -80,21 +82,22 @@ function barswitch(st){
 return(
 <div className="char">
 
-<div className="chartop">
+<div  className="chartop">
 <div className="char-img-div">
-{charswitch(props.fetchcontent)}
 </div>
+{charswitch(props.fetchcontent)}
 
 
 <div className="char-content">
 <h2>{props.fetchbox.name} </h2>
   <p>{props.fetchbox.date} </p>
  <p>{props.fetchbox.summary}</p>
- {barswitch(props.fetchcontent)}
-</div>
 
 </div>
 
+</div>
+{barswitch(props.fetchcontent)}
+<Video {...props} />
 </div>
   )
 }

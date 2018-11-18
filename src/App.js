@@ -88,7 +88,7 @@ A recent Dengeki PlayStation interview reveals that the development team look at
 
 The mechanics set in this series help influence game play elements in Koei's other titles, some of which include the Samurai Warriors and Dynasty Warriors: Gundam series, Kessen III, and Bladestorm: The Hundred Years' War. Both the Dynasty Warriors and Samurai Warriors series crossover in the Warriors Orochi series.`,
   imgsrc: './components/game/dyps4.jpg',
-  ytlink: 'https://www.youtube.com/watch?v=Xgo2s53VejM',
+  ytlink: 'https://www.youtube.com/embed/Xgo2s53VejM',
   entries: '9'} );
 
       break;
@@ -102,7 +102,7 @@ Changing the setting alone created more leeway for focusing on the characters an
 
 His choices to move the series to Nintendo's systems are usually motivated by his desire to tinker with new hardware for the company and series. His desire to create Samurai Warriors Chronicles on the Nintendo 3DS began after he tried a test demo of the Animal Crossing title for the hand-held console. Although skeptic, he was blown away and sought to ignite the same experience with Samurai Warriors fans.`,
   imgsrc: './66094-samurai-warriors-4-na-ps4-box-art.png',
-  ytlink: 'https://www.youtube.com/watch?v=gaXXN6U04fc',
+  ytlink: 'https://www.youtube.com/embed/gaXXN6U04fc',
   entries: '4'});
 
     break;
@@ -114,7 +114,7 @@ The series' general producer is Kou Shibusawa. According to his commentary in in
 
 During his personal research, he became familiar with Japanese horse owners in his local area and visited popular horse racing tracks. His goal shifted into a wish to replicate the care and resources for rearing a race horse that could win a Group One (G1) race. These concepts were married into the first title and remain a core idea within the series.`,
   imgsrc: './Winning_post.jpg',
-  ytlink: 'https://www.youtube.com/watch?v=qCaL7nRI0jY',
+  ytlink: 'https://www.youtube.com/embed/qCaL7nRI0jY',
   entries: '8' })
 
   break;
@@ -130,7 +130,7 @@ Another trait unique to Kiniro no Corda is the method of story telling. Other Ne
 
 The main protagonists in this series are completely silent high school girls. Special illustrations within the games will avoid showing her face or are drawn in first-person perspective. Any conversation options that appear in the games will not have her speak words, instead offering third-person commands such as "Approve" or "Deny". Ruby Party developer, Ayako Tsukaguchi, explains that this approach lets players say their own personal responses to the situation rather than select a predetermined quote that doesn't necessarily agree with them. Characters will address her by her default name if players use it, even speaking it aloud during voiced events.`,
 imgsrc:  './Corda4.jpg',
-ytlink: 'https://www.youtube.com/watch?v=hjWSBCQZTS8',
+ytlink: 'https://www.youtube.com/embed/hjWSBCQZTS8',
 entries: '4'
 
   })
@@ -151,7 +151,7 @@ Zhao Yun placed fourth place with fans in Gamecity's Dynasty Warriors 7 characte
 
 In Kessen II, his character's height is the same as his Dynasty Warriors counterpart.`,
 
-ytlink: 'https://www.youtube.com/watch?v=zlv3BPzv6-I'
+ytlink: 'https://www.youtube.com/embed/zlv3BPzv6-I'
 
   })
   break;
@@ -169,7 +169,7 @@ Gamecity's Dynasty Warriors 7 character popularity poll has his Dynasty Warriors
 
 His character's height in Kessen II is 185 cm (6'1").`,
 
-ytlink: 'https://www.youtube.com/watch?v=MoUhA0GeVx4'
+ytlink: 'https://www.youtube.com/embed/MoUhA0GeVx4'
 
   })
             break;
@@ -187,7 +187,7 @@ His Dynasty Warriors incarnation ranked in seventeenth place in Gamecity's Dynas
 
 His character's height in Kessen II is 180 cm (5'11").`,
 
-ytlink: 'https://www.youtube.com/watch?v=ljW3n42oXKQ'
+ytlink: 'https://www.youtube.com/embed/ljW3n42oXKQ'
 
       })
 
@@ -205,7 +205,7 @@ His Dynasty Warriors counterpart shares a brotherly relationship with one of Cao
 
 The height for his Kessen II incarnation is 185 cm (6'1").`,
 
-ytlink: 'https://www.youtube.com/watch?v=RLTszrNqBFw'
+ytlink: 'https://www.youtube.com/embed/RLTszrNqBFw'
 
       })
 
@@ -221,7 +221,7 @@ His trademarks in the Dynasty Warriors series are his high stats, his vastly sup
 
 This counterpart also has a character image song titled KING OF DESTROYER and a duet with Diaochan called REASON TO FIGHT.`,
 
-  ytlink: 'https://www.youtube.com/watch?v=Ej9MSVLPKPE'
+  ytlink: 'https://www.youtube.com/embed/Ej9MSVLPKPE'
 
   }); break;
 
@@ -238,7 +238,7 @@ Fans voted him to second place in Gamecity's Sengoku Musou 3: Empires and Sengok
 
 His Nobunaga's Ambition counterpart is second place in Gamecity's character popularity ranking for 2015. He placed twenty-third in the Nobunaga no Yabou Taishi poll for most favorite father.`,
 
-ytlink: 'https://www.youtube.com/watch?v=vg8Tn6nZ7Qo'
+ytlink: 'https://www.youtube.com/embed/vg8Tn6nZ7Qo'
 
   }); break;
 
@@ -253,7 +253,7 @@ In many of Kou Shibusawa's produced works, Nobunaga is often portrayed as a char
 
 His Samurai Warriors portrayal is deemed as the equivalent to the Dynasty Warriors portrayal of Cao Cao. Nobunaga is seventeenth place in Gamecity's Sengoku Musou 3: Empires character popularity poll. In Koei-Tecmo's Facebook Sengoku Musou Chronicle 2nd poll, he tied for sixth place with three other characters. For the Samurai Warriors 4 poll, he placed thirty-five in the list.`,
 
-ytlink: 'https://www.youtube.com/watch?v=LN79Gmj5KI0'
+ytlink: 'https://www.youtube.com/embed/LN79Gmj5KI0'
   }); break;
 
   case 'Masa':  this.handleobj({
@@ -267,7 +267,7 @@ In Gamecity's Sengoku Musou 3: Empires and Sengoku Musou Chronicle 2nd character
 
 His Nobunaga's Ambition counterpart is fourth place in Gamecity's character popularity ranking for 2015. He placed twentieth in the Nobunaga no Yabou Taishi poll for most favorite father.`,
 
-ytlink:'https://www.youtube.com/watch?v=2yXcuNZgIO0'
+ytlink:'https://www.youtube.com/embed/2yXcuNZgIO0'
 
   }); break;
 
@@ -282,7 +282,7 @@ Gamecity's Sengoku Musou 3: Empires character popularity poll lists his Samurai 
 
 The Nobunaga no Yabou 201X poll for 4-star officers puts him in forty-fifth place.`,
 
-ytlink:'https://www.youtube.com/watch?v=j9ZIryG0Qxg'
+ytlink:'https://www.youtube.com/embed/j9ZIryG0Qxg'
   }); break;
 
   case 'Taka':  this.handleobj({
@@ -298,7 +298,7 @@ His Nobunaga's Ambition counterpart is sixteenth place in Gamecity's character p
 
 In Saihai no Yukue, his height is 201 cm and he is 45 years old. He reads and trains as a hobby and his favorite food is rice.`,
 
-ytlink:'https://www.youtube.com/watch?v=M1huszJC-aM'
+ytlink:'https://www.youtube.com/embed/M1huszJC-aM'
   }); break;
 
   default : return

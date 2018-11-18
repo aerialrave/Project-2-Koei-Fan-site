@@ -7,6 +7,7 @@ import GoldCTitle from './Corda4.jpg';
 import DWRow from '../DWRow';
 import SWRow from '../SWRow';
 
+import Video from '../video';
 
 export default function Game(props){
 
@@ -67,7 +68,7 @@ return(
 </div>
 
 </div>
-
+<Video {...props} />
 
 </div>
   )
