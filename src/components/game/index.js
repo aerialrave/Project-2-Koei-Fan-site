@@ -2,14 +2,15 @@ import React from 'react';
 import DWTitle from './dyps4.jpg';
 import SWTitle from './66094-samurai-warriors-4-na-ps4-box-art.png';
 import WinPTitle from './Winning_post.jpg';
-import GoldCTitle from './Corda4.jpg'
+import GoldCTitle from './Corda4.jpg';
 
-import  from './components/DWRow'
-import  from './components/SWRow'
+import DWRow from './components/DWRow';
+import SWRow from './components/SWRow';
+
 function gameswitch(st){
 
 switch (st){
-  case 'DW': return(  <img src={DWTitle} />  )
+    case 'DW': return( <img src={DWTitle} />  )
       break;
     case 'SAMW': return( <img src={SWTitle} /> )
       break;
@@ -25,12 +26,12 @@ switch (st){
 
 
 
-function charswitch(st){
+function Barswitch(st){
 
 switch (st){
-  case 'DW': return(  <img src={DWTitle} />  )
+  case 'DW': return(  <DWRow />  )
       break;
-    case 'SAMW': return( <img src={SWTitle} /> )
+    case 'SAMW': return( <SWRow /> )
       break;
       default: return;
 
@@ -42,7 +43,6 @@ switch (st){
 
 
 export default function Game(props){
-
 
 
 return(
@@ -60,7 +60,7 @@ return(
 
 <h2>{props.fetchbox.title}</h2>
 <p>{props.fetchbox.summary}</p>
-
+{barswitch(props.fetchcontent)}
 </div>
 
 </div>
