@@ -10,8 +10,10 @@ import Taka from './Tadakatsu-sw4.jpg';
 import Masamune from './Masamune-sw4.jpg';
 import Nobunaga from './Nobunaga-sw4.jpg';
 
-import DWRow from './components/DWRow';
-import SWRow from './components/SWRow';
+import DWRow from '../DWRow';
+import SWRow from '../SWRow';
+
+export default function Character(props){
 
 function charswitch(st){
   switch (st){
@@ -45,26 +47,26 @@ function charswitch(st){
 
 function barswitch(st){
   switch (st){
-      case 'Zhou': return(  <DWRow />  )
+      case 'Zhou': return(  <DWRow {...props} />  )
       break;
-      case 'Guan': return( <DWRow /> )
+      case 'Guan': return( <DWRow {...props} /> )
       break;
-      case 'Cao': return( <DWRow /> )
+      case 'Cao': return( <DWRow {...props} /> )
       break;
-      case 'Xiahou':return ( <DWRow />)
+      case 'Xiahou':return ( <DWRow  {...props} />)
       break;
-      case 'Lu': return(  <DWRow />  )
+      case 'Lu': return(  <DWRow  {...props} />  )
         break;
 
-      case 'Yuki': return( <SWRow /> )
+      case 'Yuki': return( <SWRow  {...props} /> )
         break;
-      case 'Nobu': return( <SWRow /> )
+      case 'Nobu': return( <SWRow  {...props} /> )
         break;
-      case 'Masa':return ( <SWRow />)
+      case 'Masa':return ( <SWRow {...props}  />)
         break;
-      case 'Hanz': return(  <SWRow />  )
+      case 'Hanz': return(  <SWRow {...props}  />  )
           break;
-        case 'Taka': return( <SWRow /> )
+        case 'Taka': return( <SWRow {...props}  /> )
           break;
 
       default: return;
@@ -74,7 +76,7 @@ function barswitch(st){
 
 
 
-export default function Character(props){
+
 return(
 <div className="char">
 

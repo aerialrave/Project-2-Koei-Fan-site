@@ -4,8 +4,11 @@ import SWTitle from './66094-samurai-warriors-4-na-ps4-box-art.png';
 import WinPTitle from './Winning_post.jpg';
 import GoldCTitle from './Corda4.jpg';
 
-import DWRow from './components/DWRow';
-import SWRow from './components/SWRow';
+import DWRow from '../DWRow';
+import SWRow from '../SWRow';
+
+
+export default function Game(props){
 
 function gameswitch(st){
 
@@ -26,12 +29,12 @@ switch (st){
 
 
 
-function Barswitch(st){
+function barswitch(st){
 
 switch (st){
-  case 'DW': return(  <DWRow />  )
+  case 'DW': return(  <DWRow {...props} />  )
       break;
-    case 'SAMW': return( <SWRow /> )
+    case 'SAMW': return( <SWRow {...props} /> )
       break;
       default: return;
 
@@ -42,7 +45,7 @@ switch (st){
 
 
 
-export default function Game(props){
+
 
 
 return(

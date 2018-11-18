@@ -10,30 +10,31 @@ return(
 <div id="charslide">
 
 <div className="charblock" onClick={() =>props.mixclutch('character','Zhou')}  >
-<img src={Zhou} />
+<img src={Zhao} />
 <h3>Zhou Yun</h3>
  </div>
 
-<div className="charblock"  onClick={() =>props.mixclutch('character','Guan')}>
+<div className="charblock" onClick={() =>props.mixclutch('character','Guan')}>
 <img src={Guan} />
  <h3>Guan Yu</h3>
 </div>
 
-<div className="charblock"  onClick={() =>props.mixclutch('character','Cao')}>
+<div className="charblock" onClick={() =>props.mixclutch('character','Cao')}>
 <img src={Cao} />
 <h3>Cao Cao</h3>
  </div>
 
-<div className="charblock"  onClick={() =>props.mixclutch('character','Xiahou')}>
+<div className="charblock" onClick={() =>props.mixclutch('character','Xiahou')}>
 <img src={Xia} />
 <h3>Xiahou Dun</h3>
 </div>
 
-
-<div className="charblock"  onClick={() =>props.mixclutch('character','Lu')}>
+<div className="charblock" onClick={() =>props.mixclutch('character','Lu')}>
 <img src={Lu} />
 <h3>Lu Bu</h3>
 
+
+</div>
 
 </div>
   )

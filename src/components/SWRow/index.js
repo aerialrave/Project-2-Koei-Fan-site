@@ -33,7 +33,7 @@ return(
 <div className="charblock"  onClick={() =>props.mixclutch('character','Taka')}>
     <img src={Taka} />
 <h3>Tadakatsu Honda</h3>
-
+</div>
 
 </div>
   )

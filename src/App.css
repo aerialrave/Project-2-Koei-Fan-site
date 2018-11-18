@@ -20,6 +20,11 @@
     flex-flow: column;
 }
 
+#charslide{
+display: inline-flex;
+flex-flow: row;
+flex-wrap: wrap;
+}
 
 
 .bottom{
@@ -68,3 +73,26 @@
 	width: 100%;
 	height: 100%;
 }
+
+
+.char{
+  display: flex;
+  flex-flow: column;
+  }
+
+.chartop{
+    display: flex;
+
+  }
+
+.char-img-div{
+  flex: 1;
+  }
+
+.char-img-div >img{
+    width: 600px;
+    height: auto;
+  }
+  .char-content{
+    flex:2;
+  }

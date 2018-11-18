@@ -58,7 +58,7 @@ viewControl(){
 const view = this.state.currentview;
 switch(view) {
 
-    case 'character': return <Character fetchclutch={this.handleFetch} viewclutch={this.handleView} fetchcontent={this.state.fetchstring} fetchbox={this.state.fetchobj} />
+    case 'character': return <Character fetchclutch={this.handleFetch} viewclutch={this.handleView} fetchcontent={this.state.fetchstring} fetchbox={this.state.fetchobj} mixclutch={this.mixControl} />
     // use this for multi returns case 'hi': return (<div><Character /><Game /></div>)
       // use this to change content on fetch change view from game to character
     case 'game':return <Game fetchclutch={this.handleFetch} viewclutch={this.handleView} fetchcontent={this.state.fetchstring} fetchbox={this.state.fetchobj} mixclutch={this.mixControl}  />
