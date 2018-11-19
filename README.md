@@ -20,4 +20,6 @@ With this path opened, a stored base of information had to be placed into the si
 
 A functional Website constucted in react that has several Views that Change the information in those views Conditionally
 
-
+## Resouces
+Site is deployed at : http://outstanding-pen.surge.sh/
+Youtube link describing development is at https://youtu.be/0ZNaoLy8Cz4
