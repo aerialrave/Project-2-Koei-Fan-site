@@ -1,44 +1,23 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## `Project 2 First Drafts`
 
-In the project directory, you can run:
+A Webite using React documenting 4 titles produced by Koei, A japanese videogame company, and 5 figures from 2 titles by that company,
+Listing the Names of the game,  A summary and a youtube video for each title and character. Also the first draft would have a search functionality to view different characters.
 
-### `npm start`
+The information about the titles, characters and summaries would be sourced from the wikimedia api used by Koei wikia, the source of the information presented
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### `Wikia api attempt`
+This wiki api has a system by which queries are  done using  & value= statements to query it chained together to whittle down selectionsor to recieve specified reply formatting (e.g php, json, etc) While recieving the summaries  was possible, it required some dedicated use of regex editing to filter out some unwanted artifacts of translation from wikitext. This seemed like a promising path until, severe CORS errors were encountered, rejecting the calls to the API entirely. Options were explored to overcome this hurdle, in the form of adding proxy statements to API calls or even usage of a set up proxy server itself. Ultimately the presiding insructor vetoed any use of those options.  To preserve the existing work but still fulfill the goals of the project we went with making the whole site in react and junked use of an API entirely.   
+ 
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+### `Retooled Api -free option`
 
-### `npm test`
+With this path opened, a stored base of information had to be placed into the site itself to be shown when points of intrest were clicked rather than call an internet resource.
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### `Minimum Viable Product`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+A functional Website constucted in react that has several Views that Change the information in those views Conditionally
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
