@@ -19,26 +19,26 @@ export default function Character(props){
 
 function charswitch(st){
   switch (st){
-      case 'Zhou': return(  <img src={ZhouYun} />  )
+      case 'Zhou': return(  <img  className="portrait" src={ZhouYun} />  )
       break;
-      case 'Guan': return( <img src={GuanYu} /> )
+      case 'Guan': return( <img  className="portrait" src={GuanYu} /> )
       break;
-      case 'Cao': return( <img src={CaoCao}   /> )
+      case 'Cao': return( <img  className="portrait" src={CaoCao}   /> )
       break;
-      case 'Xiahou':return ( <img src={Xiahou} />)
+      case 'Xiahou':return ( <img  className="portrait" src={Xiahou} />)
       break;
-      case 'Lu': return(  <img src={LuBu} />  )
+      case 'Lu': return(  <img  className="portrait" src={LuBu} />  )
         break;
 
-      case 'Yuki': return( <img src={YukiKim} /> )
+      case 'Yuki': return( <img  className="portrait" src={YukiKim} /> )
         break;
-      case 'Nobu': return( <img src={Nobunaga} /> )
+      case 'Nobu': return( <img  className="portrait" src={Nobunaga} /> )
         break;
-      case 'Masa':return ( <img src={Masamune} />)
+      case 'Masa':return ( <img  className="portrait" src={Masamune} />)
         break;
-      case 'Hanz': return(  <img src={Hanzo} />  )
+      case 'Hanz': return(  <img className="portrait"  src={Hanzo} />  )
           break;
-        case 'Taka': return( <img src={Taka} /> )
+        case 'Taka': return( <img  className="portrait" src={Taka} /> )
           break;
 
       default: return;

@@ -85,15 +85,12 @@ flex-wrap: wrap;
   margin-bottom: 30px;
   }
 
-.char-img-div{
 
-max-width: fit-content;
-  }
 
-.char-img-div >img{
+.char-img-div > img {
   object-fit: contain;
-    width: auto;
-    height: auto;
+    width: 500px;
+    height: 500px;
   }
   .char-content{
     flex:2;
@@ -106,4 +103,11 @@ max-width: fit-content;
 
 .charblock :hover{
   cursor:pointer;
+}
+
+
+.portrait{
+  width: 500px;
+  height: 500px;
+
 }
