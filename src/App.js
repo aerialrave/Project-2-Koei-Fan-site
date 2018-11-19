@@ -10,7 +10,7 @@ import Character from './components/character'
 import './App.css';
 import axios from 'axios';
 
-//const BASE_URL = "http://www.koei.wikia.com/api.php?";
+
 
 class App extends Component {
   constructor(props){
@@ -27,7 +27,7 @@ this.handleobj = this.handleobj.bind(this);
 this.viewControl = this.viewControl.bind(this);
 this.mixControl = this.mixControl.bind(this);
   }
-// handles change of view
+
 handleView(view){
 this.setState({
   currentview: view
@@ -42,10 +42,6 @@ handleobj(object){
       })
 }
 
-
-
-
-// handles changes of content // chooses which pool of data
  handleFetch(grab){
   console.log(grab);
 this.setState({
@@ -59,8 +55,7 @@ const view = this.state.currentview;
 switch(view) {
 
     case 'character': return <Character fetchclutch={this.handleFetch} viewclutch={this.handleView} fetchcontent={this.state.fetchstring} fetchbox={this.state.fetchobj} mixclutch={this.mixControl} />
-    // use this for multi returns case 'hi': return (<div><Character /><Game /></div>)
-      // use this to change content on fetch change view from game to character
+
     case 'game':return <Game fetchclutch={this.handleFetch} viewclutch={this.handleView} fetchcontent={this.state.fetchstring} fetchbox={this.state.fetchobj} mixclutch={this.mixControl}  />
 
     default: return <Welcome />
@@ -69,8 +64,6 @@ switch(view) {
 
 }
 
-
-// get a list of all games and characters and then  make the appropriate axios request
  fetchControl(fetch){
 
 
@@ -118,7 +111,6 @@ During his personal research, he became familiar with Japanese horse owners in h
   entries: '8' })
 
   break;
-  // this is for the otomo game
   case 'Gold':  this.handleobj({
 
     title: 'Golden Corda',
@@ -323,14 +315,14 @@ mixControl(view,title){
     return (
       <div className="App">
         <div className="top">
-          {/*banner needs onclick and viewclutch*/}
+
         <Banner viewclutch={this.handleView} />
         </div>
 
         <div className="bottom">
-        {/*sidebar needs onclick and viewclutch*/}
+
         <Sidebar viewclutch={this.handleView} fetchclutch={this.handleFetch} fetchcontent={this.state.fetchstring} mixclutch={this.mixControl}  />
-        {/*the rest of the props go here */}
+
         <Content viewclutch={this.handleView}  window={this.viewControl} fetchclutch={this.handleFetch} fetchcontent={this.state.fetchstring}  />
         </div>
 
